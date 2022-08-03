@@ -44,9 +44,9 @@ const productos = [producto1, producto2, producto3, producto4, producto5, produc
 
 for(let i = 0 ; i < productos.length; i++){
     const producto = new Producto(prompt("Ingrese nombre del producto"), parseFloat(prompt("Ingrese peso xkg")), parseFloat(prompt("Ingrese precio")), parseFloat(prompt("Ingrese stock")))    
-        productos.push(producto)    
-        console.table(productos)    
-        break            
+    productos.push(producto)    
+    console.table(productos)    
+    break            
 }
 
 
