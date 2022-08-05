@@ -41,14 +41,27 @@ const producto7 = new Producto("Filet de lenguado", 1, 1799, 30)
 
 /*ARRAY DE OBJETOS TIENDA*/
 const productos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7]
-
+/*
 for(let i = 0 ; i < productos.length; i++){
     const producto = new Producto(prompt("Ingrese nombre del producto"), parseFloat(prompt("Ingrese peso xkg")), parseFloat(prompt("Ingrese precio")), parseFloat(prompt("Ingrese stock")))    
     productos.push(producto)    
     console.table(productos)    
     break            
 }
+*/
 
+do{
+    const producto = new Producto(prompt("Ingrese nombre del producto"), parseFloat(prompt("Ingrese peso xkg")), parseFloat(prompt("Ingrese precio")), parseFloat(prompt("Ingrese stock")))
+
+    if(producto == ""){
+    
+    alert( "ingrese datos del producto para continuar.")
+    
+    }
+} while (productos){
+    productos.push(Producto)
+    console.table(productos)
+}
 
 
 
